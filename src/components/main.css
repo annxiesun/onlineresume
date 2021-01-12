@@ -1,5 +1,5 @@
 @font-face {
     font-family: 'Nomark';
-    src: local('Nomark'), url(../resources/Nomark.otf) format('otf');
+    src: local('Nomark'), url(/../resources/Nomark.otf) format('otf');
   }
 
