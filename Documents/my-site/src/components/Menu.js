@@ -5,25 +5,29 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import Skills from './SkillsPage'
+
+import Skills from './Skills/SkillsPage'
+import Home from './Home'
+
 import { Switch } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
-import { purple } from '@material-ui/core/colors';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 
+import './main.css'
+
 const Toggle = withStyles({
   switchBase: {
-    color: purple[300],
+    color: "white",
     '&$checked': {
-      color: purple[500],
+      color: "black",
     },
     '&$checked + $track': {
-      backgroundColor: purple[500],
+      backgroundColor: "black",
     },
   },
   checked: {},
-  track: {backgroundColor: purple[500],},
+  track: {backgroundColor:"grey",},
 })(Switch);
 
 
@@ -33,7 +37,9 @@ class Menu extends React.Component {
   
   this.state={
     checkedA:true,
-    mode:"dark"
+    mode:"dark",
+    col:["#191D34", "white"],
+    col2:["#EBEAE8", "black"]
   }
 
   this.handleChange= this.handleChange.bind(this)
@@ -41,7 +47,16 @@ class Menu extends React.Component {
 
 
    handleChange (event) {
-    this.setState({[event.target.name]: event.target.checked,  mode:"light"});
+    this.setState({[event.target.name]: event.target.checked});
+
+
+    if (this.state.mode=="dark"){
+      this.setState({mode:"light", col:["#EBEAE8", "black"],
+      col2:["#191D34", "white"]})
+    } else {
+      this.setState({mode:"dark",col:["#191D34", "white"],
+      col2:["#EBEAE8", "black"]})
+    }
   };
 
 
@@ -68,14 +83,15 @@ class Menu extends React.Component {
 </nav>
 
 <SwitchRoute>
-          <Route path="/about">
-            <About />
-          </Route>
+
           <Route path="/projects">
             <Users />
           </Route>
           <Route path="/skills">
-            <Skills mode={this.state.mode}/>
+            <Skills col={this.state.col}/>
+          </Route>
+          <Route path="/">
+            <Home col1={this.state.col} col2={this.state.col2}/>
           </Route>
         </SwitchRoute>
 </div>
@@ -86,9 +102,6 @@ class Menu extends React.Component {
   }
 }
 
-function Home() {
-  return <h2>Home</h2>;
-}
 
 function About() {
   return <h2>About</h2>;

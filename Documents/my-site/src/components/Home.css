@@ -1,0 +1,47 @@
+
+.section{
+    width:50vw;
+    height:calc(100vh - 62px);
+    float:left;
+}
+
+
+.home-container{
+    height:calc(100vh - 62px);
+    display:flex;
+}
+
+.title{
+    font-family:Nomark;
+    line-height: 0.5em;
+    font-size:20vw;
+    text-align: right;
+    position: relative;
+    top: 40%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+
+.my-desc{
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+
+}
+
+
+@media only screen and (max-width: 700px) {
+    /* For desktop: */
+    .section{
+        width:100vw
+    }
+
+    .my-desc{
+        position: absolute;
+        top: 140%;
+        -ms-transform: translateY(-140%);
+        transform: translateY(-140%);
+    
+    }
+  }

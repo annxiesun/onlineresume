@@ -4,7 +4,7 @@ import css from './SkillBlock.css'
 const regularTitleStyle = {
     position:"relative",
     transform:"translateY(200%)",
-    transition: "2s",
+    transition: "0.5s",
     fontSize:"1em"
    
 }
@@ -12,7 +12,7 @@ const regularTitleStyle = {
 const hoverTitleStyle = {
     position:"relative",
     transform:"translateY(0)",
-    transition: "2s",
+    transition: "0.5s",
     fontSize:"1em",
 }
 
@@ -25,26 +25,26 @@ const hoverDescStyle = {
     position:"relative",
     top:"10%",
     opacity:"1",
-    transition: "2s",
+    transition: "0.5s",
     
 }
 
 const regularBlockStyle ={
-    boxShadow: "0px 0px #FFFFFF",
+    boxShadow: "0px 0px",
     width:"250px",
     height:"400px",
-    border: "2px solid white",
-    transition: "2s",
+    border: "2px solid",
+    transition: "0.5s",
     margin:"1em",
 
 
 }
 
 const hoverBlockStyle ={
-    boxShadow: "5px 5px #FFFFFF",
+    boxShadow: "5px 5px",
     width:"250px",
     height:"400px",
-    border: "2px solid white",
+    border: "2px solid",
     transform: "translate(-2%, -2%)",
     transition: "2s",
     margin:"1em",
@@ -97,7 +97,8 @@ class SkillBlock extends React.Component {
 
            
             <div className="skill-block" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}
-            style={{...this.state.blockStyle, backgroundColor: this.props.col[0]}} >
+            style={{...this.state.blockStyle, backgroundColor: this.props.col[0],
+            borderColor:this.props.col[1], boxShadowColor:this.props.col[1]}} >
                 <h3 style={
                         {...this.state.titleStyle, color:this.props.col[1]}
                     }
