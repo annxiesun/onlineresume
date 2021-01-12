@@ -1,21 +1,55 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
-  Switch,
+  Switch as SwitchRoute,
   Route,
   Link
 } from "react-router-dom";
+import Skills from './SkillsPage'
+import { Switch } from '@material-ui/core';
+import { withStyles } from '@material-ui/core/styles';
+import { purple } from '@material-ui/core/colors';
+import FormGroup from '@material-ui/core/FormGroup';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+
+const Toggle = withStyles({
+  switchBase: {
+    color: purple[300],
+    '&$checked': {
+      color: purple[500],
+    },
+    '&$checked + $track': {
+      backgroundColor: purple[500],
+    },
+  },
+  checked: {},
+  track: {backgroundColor: purple[500],},
+})(Switch);
+
 
 class Menu extends React.Component {
   constructor() {
-	super();
+  super();
+  
+  this.state={
+    checkedA:true,
+    mode:"dark"
+  }
+
+  this.handleChange= this.handleChange.bind(this)
    }
+
+
+   handleChange (event) {
+    this.setState({[event.target.name]: event.target.checked,  mode:"light"});
+  };
 
 
   render() {
     return (
       <Router>
         <div>
+        
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
 
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,11 +60,14 @@ class Menu extends React.Component {
       <Link className="nav-item nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>
       <Link  className="nav-item nav-link" to="/projects">Projects</Link>
       <Link className="nav-item nav-link" to="/skills">Skills</Link>
+      <FormControlLabel
+        control={<Toggle checked={this.state.checkedA} onChange={this.handleChange} name="checkedA" />}
+      />
     </div>
   </div>
 </nav>
 
-<Switch>
+<SwitchRoute>
           <Route path="/about">
             <About />
           </Route>
@@ -38,9 +75,9 @@ class Menu extends React.Component {
             <Users />
           </Route>
           <Route path="/skills">
-            <Home />
+            <Skills mode={this.state.mode}/>
           </Route>
-        </Switch>
+        </SwitchRoute>
 </div>
 </Router>
 
