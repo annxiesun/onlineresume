@@ -14,7 +14,7 @@ class SkillsPageCode extends React.Component {
   render() {
     
     return (
-      <div id="hi" style={{backgroundColor:this.props.col[0]}}>
+      <div style={{backgroundColor:this.props.col[0]}}>
       <div className="skills-container" >
       <div className="row">
 <SkillBlock title="Application Development" desc="Hello" style={{position:"relative", left:"20px"}}

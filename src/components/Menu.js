@@ -8,6 +8,7 @@ import {
 
 import Skills from './Skills/SkillsPage'
 import Home from './Home'
+import ProjectPage from './Projects/ProjectPage.js'
 
 import { Switch } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
@@ -85,7 +86,7 @@ class Menu extends React.Component {
 <SwitchRoute>
 
           <Route path="/projects">
-            <Users />
+            <ProjectPage />
           </Route>
           <Route path="/skills">
             <Skills col={this.state.col}/>

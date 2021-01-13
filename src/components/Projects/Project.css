@@ -1,0 +1,42 @@
+.project-container{
+    margin-right:17em;
+    margin-left:17em;
+    margin-top:3em;
+    margin-bottom:3em;
+}
+
+.project-container:hover{
+    transform:scale(1.01);
+}
+
+@media only screen and (max-width: 1200px) and (min-width:900px) {
+    /* For desktop: */
+    .project-container{
+        margin-right:7em;
+        margin-left:7em;
+    }
+  }
+
+
+  @media only screen and (max-width: 900px) {
+    /* For desktop: */
+    .project-container{
+        margin-right:1em;
+        margin-left:1em;
+    }
+  }
+
+  /**********************/
+.project-image{
+    width:200px;
+    height:100%;
+    float:left;
+    background-color:red;
+}
+
+.project-text{
+    text-align: left;
+    padding:3em;
+    width:calc(100% - 200px);
+    float:right;
+}

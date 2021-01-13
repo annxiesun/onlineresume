@@ -70,11 +70,11 @@ class SkillBlock extends React.Component {
 
 
     onMouseEnter() {
-       setTimeout(() => this.setState({
+       this.setState({
            blockStyle: hoverBlockStyle,
             descStyle : hoverDescStyle,
             titleStyle: hoverTitleStyle
-          }), 200)
+          })
         
     }
 
@@ -96,9 +96,12 @@ class SkillBlock extends React.Component {
         return (
 
            
-            <div className="skill-block" onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}
+            <div className="skill-block" 
             style={{...this.state.blockStyle, backgroundColor: this.props.col[0],
-            borderColor:this.props.col[1], boxShadowColor:this.props.col[1]}} >
+            borderColor:this.props.col[1], color:this.props.col[1]}} >
+
+<div style={{width:"250px",height:"400px", position:"absolute"}}
+onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}/>
                 <h3 style={
                         {...this.state.titleStyle, color:this.props.col[1]}
                     }
