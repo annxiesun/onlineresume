@@ -1,8 +1,8 @@
 .project-container{
     margin-right:17em;
     margin-left:17em;
-    margin-top:3em;
-    margin-bottom:3em;
+    padding-top:3em;
+    padding-bottom:3em;
 }
 
 .project-container:hover{

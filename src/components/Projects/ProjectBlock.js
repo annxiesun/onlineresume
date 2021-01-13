@@ -22,8 +22,8 @@ class ProjectBlock extends React.Component {
         <div style={this.state.blockStyle}>
         <div className="project-image"></div>
         <div className="project-text">
-        <h3>{this.props.title}</h3>
-        <p>{this.props.desc}</p>
+        <h3 style={{color:this.props.col[1]}}>{this.props.title}</h3>
+        <p style={{color:this.props.col[1]}}>{this.props.desc}</p>
         </div>
         </div>
     

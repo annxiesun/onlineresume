@@ -86,7 +86,7 @@ class Menu extends React.Component {
 <SwitchRoute>
 
           <Route path="/projects">
-            <ProjectPage />
+            <ProjectPage col={this.state.col}/>
           </Route>
           <Route path="/skills">
             <Skills col={this.state.col}/>

@@ -11,17 +11,19 @@ class ProjectPage extends React.Component {
 
   render() {
     return (
-        <div>
- <div class="project-container">       
-<ProjectBlock title="hello" desc="hello"/>
+        <div style={
+            {   width:"100vw",
+                backgroundColor:this.props.col[0]}}>
+ <div className="project-container">       
+<ProjectBlock title="hello" desc="hello" col={this.props.col}/>
    </div> 
 
-<div class="project-container">       
-<ProjectBlock title="hello" desc="hello"/>
+<div className="project-container">       
+<ProjectBlock title="hello" desc="hello" col={this.props.col}/>
    </div> 
 
-<div class="project-container">       
-<ProjectBlock title="hello" desc="hello"/>
+<div className="project-container">       
+<ProjectBlock title="hello" desc="hello" col={this.props.col}/>
    </div> 
    </div>
     );
