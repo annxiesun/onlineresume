@@ -3,3 +3,98 @@
     src: local('Nomark'), url(/../resources/Nomark.otf) format('otf');
   }
 
+  .skill-icon{
+    font-family: "skill_icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1em;
+    margin-left: .2em;
+
+  }
+
+.nav-item{
+    color: #ffc526;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .nav-item:hover{
+    color:#ffc526
+  }
+  .nav-item:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #ffc526;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .nav-item:hover:after { 
+    width: 80%; 
+    left: 10%; 
+  }
+
+  /*********************************/
+
+  .pageSlider-exit > .page {
+    z-index: 1;
+  }
+  
+  .pageSlider-enter > .page {
+    z-index: 10;
+  }
+  
+  .pageSlider-enter.left > .page {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .pageSlider-enter.right > .page {
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  .pageSlider-exit.left > .page {
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  .pageSlider-exit.right > .page {
+    transform: translate3d(100%, 0, 0);
+  }
+  
+  .pageSlider-enter.pageSlider-enter-active > .page {
+    transform: translate3d(0, 0, 0);
+    transition: all 800ms ease-in-out;
+  }
+
+.skill-title{
+    font-family: Raleway, sans-serif;
+    font-weight:900;
+    font-size:15px;
+    letter-spacing: 0.15em;
+
+  }
+
+  h2{
+    font-family: Raleway, sans-serif;
+  }
+  
+  p{
+    font-family: Raleway, sans-serif;
+    font-weight:200;
+
+  }

@@ -1,18 +1,20 @@
 
 .section{
     width:50vw;
-    height:calc(100vh - 62px);
+    height:calc(100vh);
     float:left;
+    transition: color 0.5s;
 }
 
 
 .home-container{
-    height:calc(100vh - 62px);
+    height:calc(100vh);
     display:flex;
+    transition: color 0.5s;
 }
 
 .title{
-    font-family:Nomark;
+    font-family:Skills;
     line-height: 0.5em;
     font-size:20vw;
     text-align: right;
@@ -20,6 +22,7 @@
     top: 40%;
     -ms-transform: translateY(-40%);
     transform: translateY(-40%);
+    transition: color 0.5s;
 }
 
 .my-desc{
@@ -27,21 +30,57 @@
     top: 40%;
     -ms-transform: translateY(-40%);
     transform: translateY(-40%);
+    text-align: left;
+    padding-right:30%;
+    padding-left:5%;
 
 }
 
 
+.home-slide{
+    position: absolute;
+    width:50vw;
+    height: 100vh;
+    background-color:#191D34;
+    transition: 0.5s;
+
+  }
+
+  .home-slide2{
+    position: absolute;
+    width:100vw;
+    height: 50vh;
+    background-color:red;
+    transition: 0.5s;
+    display:none;
+
+  }
 @media only screen and (max-width: 700px) {
     /* For desktop: */
     .section{
-        width:100vw
+        width:100vw;
+        height:50vh;
     }
 
     .my-desc{
         position: absolute;
-        top: 140%;
+        top: 90%;
         -ms-transform: translateY(-140%);
         transform: translateY(-140%);
     
     }
+
+    .home-slide{
+        display:none;
+    }
+    .home-slide2{
+        width:100vw;
+        height: 50vh;
+        display:block;
+        background-color:#191D34;
+    
+      }
+
+
   }
+

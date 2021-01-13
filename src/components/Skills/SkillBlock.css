@@ -9,10 +9,10 @@
     justify-content: center;
 
     width:100vw;
-    height:calc(100vh - 62px);
+    height:calc(100vh);
 }
-.row{
-  position: absolute;
+.skill-row{
+  position: absolute !important;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -34,7 +34,7 @@
             height:calc(400px*3 + 3*(3em));
         }
 
-        .row{
+        .skill-row{
             position: absolute;
             top: 700px;
             -ms-transform: translateY(-50%);
@@ -54,7 +54,7 @@
             height:calc(400px + 3*(3em));
         }
 
-        .row{
+        .skill-row{
 
             top: 300px;
           }
@@ -71,8 +71,18 @@
         height:calc(400px*3 + 3*(3em));
         }
 
-        .row{
+        .skill-row{
             
                         top: 700px;
                       }
   }
+
+  .skill-icon{
+    font-size:4em;
+    z-index:-1;
+  }
+
+  .li-skill{
+    text-align:left,
+  }
+

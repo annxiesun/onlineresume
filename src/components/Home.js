@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Home.css'
 
-const titleStyle ={
+const titleStyle = {
 
     fontFamily: "Nomark",
     lineHeight: "0.5em",
@@ -13,16 +13,16 @@ const titleStyle ={
     transform: "translateY(-40%)"
 }
 
-const descStyle ={
+const descStyle = {
     position: "absolute",
     top: "40%",
     msTransform: "translateY(-40%)",
     transform: "translateY(-40%)"
 }
 
-const sectionStyle={
-    height: "calc(100vh - 62px)",
-    cssFloat: "left"
+const sectionStyle = {
+    height: "calc(100%)",
+    cssFloat: "left",
 }
 class Homepage extends React.Component {
     constructor(props) {
@@ -32,23 +32,44 @@ class Homepage extends React.Component {
 
 
     render() {
+
+        let slide  = (this.props.col2[0]=="#191D34") ? "0%" : "100%"
+
         return (
-            <div style={{color:this.props.col2[1]}}>
-                <span style={{...sectionStyle,backgroundColor: this.props.col1[0] }}>
+
+            <div style={{ color: this.props.col1[1] }}>
+<div className="home-slide"
+
+style={{transform: "translateX("+slide+")"}}
+></div>
+
+<div className="home-slide2"
+
+style={{transform: "translateY("+slide+")"}}
+></div>
+        
+                <span style={{ ...sectionStyle, backgroundColor: this.props.col2[0] }}>
                     <div className="section">
                         <h1 class="title"
-                        style={{...titleStyle, color:this.props.col1[1]}}>Annie</h1>
+                            style={{ ...titleStyle, color: this.props.col2[1] }}>Annie</h1>
                         <h1 class="title"
-                        style={{...titleStyle, color:this.props.col1[1]}}
+                            style={{ ...titleStyle, color: this.props.col2[1] }}
                         >Sun</h1>
                     </div>
                 </span>
 
-                <span style={{...sectionStyle,backgroundColor: this.props.col2[0] }}>
+                <span style={{ ...sectionStyle, backgroundColor: this.props.col1[0] }}>
                     <div className="section">
-                        <p class="my-desc">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    </p>
+                        <div class="my-desc">
+                            <h4>Computer Science Student at the University of Waterloo</h4>
+                            <p>The purpose of this site is to showcase my passion for
+                                design & bringing it alive through code!
+                            </p>
+                            <p>
+                            </p>
+
+
+                        </div>
                     </div>
                 </span>
 

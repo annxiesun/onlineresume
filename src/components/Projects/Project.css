@@ -1,13 +1,16 @@
 .project-container{
     margin-right:17em;
     margin-left:17em;
-    padding-top:3em;
-    padding-bottom:3em;
-}
+    padding-top:8em;
+    padding-bottom:8em;
+    height:calc(100vh);
+    transition:0.5s;
 
+}
+/*
 .project-container:hover{
     transform:scale(1.01);
-}
+}*/
 
 @media only screen and (max-width: 1200px) and (min-width:900px) {
     /* For desktop: */
@@ -17,6 +20,10 @@
     }
   }
 
+  .project-carousel{
+    
+  
+  }
 
   @media only screen and (max-width: 900px) {
     /* For desktop: */
@@ -26,17 +33,72 @@
     }
   }
 
+
+  @media only screen and (max-height: 600px) {
+    /* For desktop: */
+    .project-container{
+        padding-top:5em;
+        padding-bottom:1em;
+    }
+  }
+
   /**********************/
 .project-image{
     width:200px;
     height:100%;
     float:left;
     background-color:red;
+    
+
 }
 
 .project-text{
     text-align: left;
-    padding:3em;
+    padding:2em;
     width:calc(100% - 200px);
     float:right;
+    transition:0.5s;
 }
+
+.codetag{
+    height:1em,;
+    margin-left:0.4em;
+    margin-right:0.4em;
+    margin-bottom:0.8em;
+    padding:0.5em;
+    font-size:12px;
+    background-color:none;
+    border: solid 1px
+}
+
+.li-desc{
+    margin:1em;
+}
+
+.proj-title{
+    font-family: Nomark;
+    font-size:3em;
+    font-variant: small-caps;
+
+}
+
+.proj-row{
+    margin-left:0em;
+}
+
+.project-slide{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background-color:#191D34;
+    transition: 0.5s;
+
+  }
+
+  .carousel-indicators li {
+    background-color: rgba(70, 70, 70, 0.25);
+  }
+
+  .carousel-indicators .active {
+    background-color: #ffc526;
+  }
