@@ -37,7 +37,7 @@ class Homepage extends React.Component {
 
         return (
 
-            <div style={{ color: this.props.col1[1] }}>
+            <div className="page" style={{ color: this.props.col1[1] }}>
 <div className="home-slide"
 
 style={{transform: "translateX("+slide+")"}}
@@ -48,7 +48,7 @@ style={{transform: "translateX("+slide+")"}}
 style={{transform: "translateY("+slide+")"}}
 ></div>
         
-                <span style={{ ...sectionStyle, backgroundColor: this.props.col2[0] }}>
+                <span style={{ ...sectionStyle, backgroundColor:"none" }}>
                     <div className="section">
                         <h1 class="title"
                             style={{ ...titleStyle, color: this.props.col2[1] }}>Annie</h1>

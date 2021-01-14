@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Nomark';
-    src: local('Nomark'), url(/../resources/Nomark.otf) format('otf');
+    src: url(/../resources/Nomark.otf) format('otf');
   }
 
   .skill-icon{

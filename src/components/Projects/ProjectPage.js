@@ -20,7 +20,7 @@ class ProjectPage extends React.Component {
         return (
 
 
-            <div className="wrapper" style={
+            <div className="wrapper page" style={
                 {
                     width: "100vw",
                     height: "calc(100vh)",

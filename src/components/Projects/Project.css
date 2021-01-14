@@ -77,8 +77,13 @@
 
 .proj-title{
     font-family: Nomark;
-    font-size:3em;
-    font-variant: small-caps;
+    
+    
+
+    font-family: Raleway, sans-serif;
+    font-weight:900;
+    font-size:2em;
+
 
 }
 
@@ -92,6 +97,7 @@
     height: 100vh;
     background-color:#191D34;
     transition: 0.5s;
+    
 
   }
 

@@ -10,6 +10,7 @@
 
     width:100vw;
     height:calc(100vh);
+    overflow:hidden;
 }
 .skill-row{
   position: absolute !important;
@@ -24,6 +25,13 @@
 }
 
 
+.skill-slide{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background-color:#191D34;
+    transition: 0.5s;
+  }
 @media only screen and (max-width: 819px) {
     /* For desktop: */
     .skills-container{
@@ -32,6 +40,7 @@
             justify-content: center;
             width:100%;
             height:calc(400px*3 + 3*(3em));
+            overflow-y: scroll;
         }
 
         .skill-row{
@@ -41,6 +50,10 @@
             transform: translateY(-50%);
             width: 250px
           
+          }
+
+          .skill-slide{
+            height:calc(400px*3 + 3*(3em))
           }
   }
 
@@ -75,6 +88,9 @@
             
                         top: 700px;
                       }
+                      .skill-slide{
+                        height:calc(400px*3 + 3*(3em))
+                      }
   }
 
   .skill-icon{
@@ -86,3 +102,6 @@
     text-align:left,
   }
 
+.skill-name{
+  text-align: center;
+}

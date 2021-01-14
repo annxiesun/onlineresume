@@ -11,10 +11,10 @@ class SkillsPage extends React.Component {
 
   render() {
     let slide = (this.props.mode.col[0] == "#191D34") ?  "0%" : "100%"
-    
+
     return (
-      <div>
-                        <div className="project-slide"
+      <div className="page">
+                        <div className="skill-slide"
 
                     style={{ transform: "translateX(" + slide + ")" ,}}
                 />
