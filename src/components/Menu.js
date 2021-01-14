@@ -64,16 +64,10 @@ class Menu extends React.Component {
 
             }
           }>
-            <Link style={{
-              color: this.props.mode.col[1]
-            }} className="nav-item nav-link" to="/skills">Skills</Link>
-            <Link style={{
-              color: this.props.mode.col[1]
-            }}
+            <Link className="nav-item nav-link" to="/skills">Skills</Link>
+            <Link 
               className="nav-item nav-link" to="/projects">Projects</Link>
-            <Link style={{
-              color: this.props.mode.col[1]
-            }}
+            <Link 
 
               className="nav-item nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>
 
