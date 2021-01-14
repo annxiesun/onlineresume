@@ -70,6 +70,80 @@
 
 }
 
+
+.carousel-indicators li {
+    border-radius: 50%;
+    width: 0.7em;
+    height:0.7em;
+    margin: 0 2vw 0 2vw;
+    background-color: rgba(70, 70, 70, 0.25);
+    transition: 0.5s;
+  }
+
+  .carousel-indicators .active {
+    border-radius: 50%;
+    width: 0.7em;
+    height:0.7em;
+    margin: 0 2vw 0 2vw;
+    background-color: #ffc526;
+    transition: 0.5s;
+  }
+
+  @media only screen and (min-width:2000px){
+    .proj-title{
+        font-size:5vh;
+       
+    }
+    
+    
+    .codetag{
+    
+        font-size:calc(1vh + 1vw);
+        padding:0.5vh;
+    }
+    
+    .li-desc{
+        font-size:2vh;
+    }
+
+    .project-image{
+        width:30%
+    }
+
+    .project-text{
+        width:calc(70%);
+        padding:0.5em;
+        font-size:2vh;
+    }
+
+    .project-container{
+        padding-top:10%;
+        padding-bottom:20%;
+        padding-right:5%;
+        padding-left: 5%;
+
+    }
+
+    .carousel-indicators li {
+    
+        width:3em;
+        height:3em;
+        margin:3em;
+        
+      }
+
+      .carousel-indicators .active {
+        width:3em;
+        height:3em;
+        margin:3em;
+      }
+    
+    
+  }
+
+
+
+
 @media only screen and (max-width: 1200px) and (min-width:900px) {
     /* For desktop: */
     .project-container{
@@ -199,11 +273,4 @@
   }
 
 
-
-  .carousel-indicators li {
-    background-color: rgba(70, 70, 70, 0.25);
-  }
-
-  .carousel-indicators .active {
-    background-color: #ffc526;
-  }
+  

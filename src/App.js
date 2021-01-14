@@ -25,8 +25,8 @@ const code = {
   projects:
   [
     {
-      image: '/images/projectimage1.png',
-      title: "FeatherFinder",
+      image: '/images/projectimage1_2.png',
+      title: "Feather Finder",
       tagline: "A short personality quiz that gives them a bird that matches their personality",
       madewith: ["HTML", "CSS", "Javascript", "React", "Node"],
       desc: ["Used object oriented programming principles to make quiz dynamic for easy updates",
@@ -41,7 +41,7 @@ const code = {
 
     {
       image: '/images/projectimage2.png',
-      title: "MyMakeupManager",
+      title: "MyMakeup Manager",
       tagline: "Java app that helps people to keep track of their makeup collection",
       madewith: ["Java", "JavaSwing", "Guava"],
       desc: ["Used Guava data structures to organize products",
@@ -55,7 +55,7 @@ const code = {
     },
 
     {
-      image: '/images/projectimage2.png',
+      image: '/images/projectimage3_2.png',
       title: "Hackathons",
       tagline: "Created many web applications through hackathons, a winner of Oxford hacks",
       madewith: ["MERN Stack","APIs"],
@@ -86,9 +86,9 @@ const design = {
 
   projects: [
     {
-      image: '/images/projectimage1_2.png',
+      image: '/images/projectimage1.png',
       tagline: "A short personality quiz that gives them a bird that matches their personality",
-      title: "FeatherFinder",
+      title: "Feather Finder",
       madewith: ["Adobe Illustrator", "Adobe XD"],
       desc: ["Implemented features that enhanced user pleasure like animations, a special cursor & interactive cards",
         "Created modern & light illustrations inspired by tarot cards"
@@ -102,7 +102,7 @@ const design = {
 
     {
       image: '/images/projectimage2_2.png',
-      title: "MyMakeupManager",
+      title: "MyMakeup Manager",
       tagline: "Java app that helps people to keep track of their makeup collection",
       madewith: ["AdobeXD", "After Effects"],
       desc: ["Implemented a dynamic layout that displays many products and their key info, effectively using space",
@@ -116,7 +116,7 @@ const design = {
     },
 
     {
-      image: '/images/projectimage2.png',
+      image: '/images/projectimage3.png',
       title: "Hackathons",
       tagline: "Created many web applications through hackathons, winner in Oxford hacks",
       madewith: ["Adobe Suite"],

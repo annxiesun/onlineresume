@@ -51,7 +51,7 @@ style={{transform: "translateY("+slide+")"}}
                 <span style={{ ...sectionStyle, backgroundColor:"none" }}>
                     <div className="section">
                         <h1 class="title"
-                            style={{ ...titleStyle, color: this.props.col2[1] }}>Annie</h1>
+                            style={{ ...titleStyle,color: this.props.col2[1] }}>Annie</h1>
                         <h1 class="title"
                             style={{ ...titleStyle, color: this.props.col2[1] }}
                         >Sun</h1>
@@ -60,8 +60,8 @@ style={{transform: "translateY("+slide+")"}}
 
                 <span style={{ ...sectionStyle, backgroundColor: this.props.col1[0] }}>
                     <div className="section">
-                        <div class="my-desc">
-                            <h4>Computer Science Student at the University of Waterloo</h4>
+                        <div className="my-desc">
+                            <b>Computer Science Student at the University of Waterloo</b>
                             <p>The purpose of this site is to showcase my passion for
                                 design & bringing it alive through code!
                             </p>

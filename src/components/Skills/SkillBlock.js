@@ -52,7 +52,7 @@ const hoverBlockStyle = {
     height: "400px",
     border: "2px solid",
     transform: "translate(-2%, -2%)",
-    transition: "2s",
+    transition: "0.5s",
     margin: "1em",
 
 }

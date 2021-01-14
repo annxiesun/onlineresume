@@ -33,6 +33,7 @@
     text-align: left;
     padding-right:30%;
     padding-left:5%;
+    font-size:1vw;
 
 }
 
@@ -81,6 +82,17 @@
     
       }
 
+      .my-desc{
+        position: absolute;
+        top:80%;
+        -ms-transform: translateY(-70%);
+        transform: translateY(-70%);
+        text-align: left;
+        padding-right:30%;
+        padding-left:5%;
+        font-size:1em;
+    
+    }
 
   }
 
