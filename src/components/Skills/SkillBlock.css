@@ -10,7 +10,7 @@
 
     width:100vw;
     height:calc(100vh);
-    overflow:hidden;
+   
 }
 .skill-row{
   position: absolute !important;
@@ -40,7 +40,7 @@
             justify-content: center;
             width:100%;
             height:calc(400px*3 + 3*(3em));
-            overflow-y: scroll;
+
         }
 
         .skill-row{

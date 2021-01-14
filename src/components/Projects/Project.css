@@ -11,48 +11,9 @@
 .project-container:hover{
     transform:scale(1.01);
 }*/
-
-@media only screen and (max-width: 1200px) and (min-width:900px) {
-    /* For desktop: */
-    .project-container{
-        margin-right:7em;
-        margin-left:7em;
-    }
-  }
-
-  .project-carousel{
-    
-  
-  }
-
-  @media only screen and (max-width: 900px) {
-    /* For desktop: */
-    .project-container{
-        margin-right:1em;
-        margin-left:1em;
-    }
-  }
-
-
-  @media only screen and (max-height: 600px) {
-    /* For desktop: */
-    .project-container{
-        padding-top:5em;
-        padding-bottom:1em;
-    }
-  }
-
   /**********************/
-.project-image{
-    width:200px;
-    height:100%;
-    float:left;
-    background-color:red;
-    
 
-}
-
-.project-text{
+  .project-text{
     text-align: left;
     padding:2em;
     width:calc(100% - 200px);
@@ -100,6 +61,144 @@
     
 
   }
+.project-image{
+    width:200px;
+    height:100%;
+    float:left;
+    background-color:red;
+    
+
+}
+
+@media only screen and (max-width: 1200px) and (min-width:900px) {
+    /* For desktop: */
+    .project-container{
+        margin-right:7em;
+        margin-left:7em;
+    }
+  }
+
+  .project-carousel{
+    
+  
+  }
+
+
+
+  @media only screen and (max-width: 900px) {
+    /* For desktop: */
+    .project-container{
+        margin-right:1em;
+        margin-left:1em;
+    }
+    
+  }
+
+  @media only screen and (max-width:600px){
+    .proj-title{
+        font-size:1.5em;
+    }
+    
+    
+    .codetag{
+    
+        font-size:10px;
+    }
+    
+    .li-desc{
+        font-size:14px;
+    }
+
+    .project-image{
+        width:100px
+    }
+
+    .project-text{
+        width:calc(100% - 100px);
+    }
+  }
+
+  @media only screen and (max-width:350px){
+    .proj-title{
+        font-size:1.2em;
+    }
+    
+    
+    .codetag{
+    
+        font-size:8px;
+        padding:0.1em;
+    }
+    
+    .li-desc{
+        font-size:13px;
+    }
+
+    .project-image{
+        width:0px
+    }
+
+    .project-text{
+        width:calc(100%);
+        padding:0.5em;
+    }
+
+    .project-container{
+        padding-top:12em;
+        padding-bottom:4em;
+    }
+  }
+
+  @media only screen and (max-height: 600px) {
+    /* For desktop: */
+    .project-container{
+        padding-top:5em;
+        padding-bottom:1em;
+    }
+    
+  }
+
+  @media only screen and (max-width:250px){
+    .proj-title{
+        font-size:1em;
+    }
+    
+    
+    .codetag{
+    
+        font-size:10px;
+    }
+    
+    .li-desc{
+        font-size:10px;
+    }
+
+    .project-image{
+        width:0px
+    }
+
+    .project-text{
+        width:calc(100%);
+        padding:0.5em;
+        font-size:10px;
+    }
+
+    .project-container{
+        padding-top:14em;
+        padding-bottom:4em;
+    }
+  }
+
+  @media only screen and (max-height: 600px) {
+    /* For desktop: */
+    .project-container{
+        padding-top:5em;
+        padding-bottom:1em;
+    }
+    
+  }
+
+
 
   .carousel-indicators li {
     background-color: rgba(70, 70, 70, 0.25);

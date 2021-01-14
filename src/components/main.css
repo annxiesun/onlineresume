@@ -2,6 +2,9 @@
     font-family: 'Nomark';
     src: url(/../resources/Nomark.otf) format('otf');
   }
+  body{
+    overflow-x:hidden;
+  }
 
   .skill-icon{
     font-family: "skill_icons";
