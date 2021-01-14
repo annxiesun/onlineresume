@@ -13,6 +13,7 @@ import Home from './components/Home'
 import ProjectPage from './components/Projects/ProjectPage.js'
 
 const code = {
+  name:"Dev",
   col2: ["#EBEAE8", "black"],
   col: ["#191D34", "white"],
   icons: ["a", "b", "c"],
@@ -34,7 +35,7 @@ const code = {
       links: {
         demo: "https://featherfinder.herokuapp.com/",
         github: "https://github.com/annxiesun/birdquiz",
-        behance: "https://www.behance.net/gallery/105025295/FeatherFinder"
+        name:"Github"
       }
     },
 
@@ -48,23 +49,24 @@ const code = {
       ],
       links: {
         github: "https://github.com/annxiesun/makeupmanager",
+        name:"Github"
       }
 
     },
 
     {
       image: '/images/projectimage2.png',
-      title: "Safeways",
-      tagline: "(Oxford Hacks Winner) A web-app that shows people the least busiest times to perform everyday tasks to minimize spread of COVID-19.",
-      madewith: ["HTML", "CSS", "Javascript", "Node", "HERE API"],
+      title: "Hackathons",
+      tagline: "Created many web applications through hackathons, a winner of Oxford hacks",
+      madewith: ["MERN Stack","APIs"],
       desc: [
-        "Created a functional front-end and integrated it with the back-end",
-        "Utilized the HereTechnologies API",
-        "Effectively collaborated with a team"
+        "Focused on the front-end and integrating it with the back-end",
+        "Quickly learned new languages and concepts"
       ],
       links: {
-        github: "https://github.com/rbrtknwls/OxfordHacks-2020",
-        behance: "https://www.behance.net/gallery/105025295/FeatherFinder"
+        github: "https://devpost.com/anniesun?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav",
+        behance: "https://www.behance.net/gallery/105025295/FeatherFinder",
+        name:"Devpost"
       }
 
     }
@@ -73,6 +75,7 @@ const code = {
 }
 
 const design = {
+  name: "Design",
   col2: ["#191D34", "white"],
   col: ["#EBEAE8", "black"],
   icons: ["p", "e", "d"],
@@ -114,13 +117,15 @@ const design = {
 
     {
       image: '/images/projectimage2.png',
-      title: "Safeways",
-      madewith: ["HTML", "CSS", "Javascript", "Node", "HERE API"],
-      desc: ["Used object oriented programming principles to make quiz dynamic for easy updates",
-        "Used ParticleJs, PaperJs, & TiltJs to add flair to the site to enhance the user-experience"
+      title: "Hackathons",
+      tagline: "Created many web applications through hackathons, winner in Oxford hacks",
+      madewith: ["Adobe Suite"],
+      desc: [
+        "Designed easy to use UI and recreated designs using code",
+        "Created unique branding & presentations for each project"
       ],
       links: {
-        github: "https://github.com/annxiesun/birdquiz",
+        github: "https://github.com/rbrtknwls/OxfordHacks-2020",
         behance: "https://www.behance.net/gallery/105025295/FeatherFinder"
       }
     }

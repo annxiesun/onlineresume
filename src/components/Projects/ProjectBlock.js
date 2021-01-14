@@ -44,7 +44,7 @@ class ProjectBlock extends React.Component {
                     <div className="proj-row row">{tags}</div>
                     <p style={{ color: this.props.col[1] }}>{desc}</p>
 
-                    <a href={this.props.project.links.github}>Github</a>
+                    <a href={this.props.project.links.github}>{this.props.project.links.name}</a>
                 </div>
             </div>
 

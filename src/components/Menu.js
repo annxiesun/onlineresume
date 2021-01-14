@@ -11,7 +11,7 @@ import Skills from './Skills/SkillsPage'
 import Home from './Home'
 import ProjectPage from './Projects/ProjectPage.js'
 
-import { Switch } from '@material-ui/core';
+import { Switch, Tooltip } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 import FormGroup from '@material-ui/core/FormGroup';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -78,9 +78,11 @@ class Menu extends React.Component {
               className="nav-item nav-link active" to="/">Home <span className="sr-only">(current)</span></Link>
 
 
+              <Tooltip title={"Change to "+this.props.mode.name} arrow>
             <FormControlLabel
               control={<Toggle checked={this.props.checkedA} onChange={this.props.handleChange} name="checkedA" />}
             />
+            </Tooltip>
           </div>
 
 

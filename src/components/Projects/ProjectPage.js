@@ -24,7 +24,8 @@ class ProjectPage extends React.Component {
                 {
                     width: "100vw",
                     height: "calc(100vh)",
-                    backgroundColor: "#EBEAE8"
+                    backgroundColor: "#EBEAE8",
+                    overflow:"hidden"
                 }}>
 
                 <div className="project-slide"
