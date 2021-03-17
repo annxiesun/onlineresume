@@ -9,10 +9,11 @@
     justify-content: center;
 
     width:100vw;
-    height:calc(100vh - 62px);
+    height:calc(100vh);
+   
 }
-.row{
-  position: absolute;
+.skill-row{
+  position: absolute !important;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -24,6 +25,13 @@
 }
 
 
+.skill-slide{
+    position: absolute;
+    width:100vw;
+    height: 100vh;
+    background-color:#191D34;
+    transition: 0.5s;
+  }
 @media only screen and (max-width: 819px) {
     /* For desktop: */
     .skills-container{
@@ -31,16 +39,21 @@
             display: flex;
             justify-content: center;
             width:100%;
-            height:calc(400px*3 + 3*(3em));
+            height:calc(400px*3 + 3*(3.5em));
+
         }
 
-        .row{
+        .skill-row{
             position: absolute;
             top: 700px;
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
             width: 250px
           
+          }
+
+          .skill-slide{
+            height:calc(400px*3 + 3*(3.5em))
           }
   }
 
@@ -51,10 +64,10 @@
             display: flex;
             justify-content: center;
             width:100%;
-            height:calc(400px + 3*(3em));
+            height:calc(400px + 3*(3.5em));
         }
 
-        .row{
+        .skill-row{
 
             top: 300px;
           }
@@ -68,11 +81,27 @@
         justify-content: center;
 
         width:100%;
-        height:calc(400px*3 + 3*(3em));
+        height:calc(400px*3 + 3*(3.5em));
         }
 
-        .row{
+        .skill-row{
             
                         top: 700px;
                       }
+                      .skill-slide{
+                        height:calc(400px*3 + 3*(3.5em))
+                      }
   }
+
+  .skill-icon{
+    font-size:4em;
+    z-index:-1;
+  }
+
+  .li-skill{
+    text-align:left,
+  }
+
+.skill-name{
+  text-align: center;
+}
